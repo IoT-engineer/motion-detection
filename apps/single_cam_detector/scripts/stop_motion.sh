@@ -1,0 +1,1 @@
+for pid in $(ps -ef | grep "motion -c " | awk '{print $2}'); do sudo kill -9 $pid; done
